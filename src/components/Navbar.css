@@ -1,0 +1,57 @@
+.app_bar{
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 0 2vw 0 2vw;
+  height: 10%;
+}
+
+.logo{
+  /* background-color: red; */
+  margin-left: 3vw;
+
+}
+
+.logo > img{
+    height: 8vh;
+    width: 9vw;
+}
+
+
+.options_list{
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  /* background-color: green; */
+  list-style-type: none;
+  color: aliceblue;
+  margin-left: 25vw;
+}
+
+.options_list a{
+  font-weight: 400;
+  color: white;
+}
+
+.btn{
+    padding: 0;
+}
+
+.list_item{
+  margin: auto;
+}
+
+.avatar_container{
+  /* margin-right: 2vw; */
+  /* margin-top: 2vh; */
+  /* height: 6vh; */
+  margin-left: 6vw;
+  /* width: 4vw; */
+}
+
+.btn-check:active+.btn-success, .btn-check:checked+.btn-success, .btn-success.active, .btn-success:active, .show>.btn-success.dropdown-toggle{
+  background-color: #4e426d ;
+}
+
+.btn-check:focus+.btn-success, .btn-success:focus{
+  background-color: #4e426d ;
+}

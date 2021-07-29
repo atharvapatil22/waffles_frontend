@@ -1,0 +1,54 @@
+.sidebarChat {
+  display: flex;
+  padding: 2vh;
+  cursor: pointer;
+  align-items: center;
+  /* border-bottom: 2px solid #655889; */
+}
+.avatar {
+  margin-left: 1.2vh;
+  margin-right: 1.2vh;
+}
+
+.sidebarChat:hover {
+  background-color: #efaa86;
+}
+
+.sidebarChat_info > h2 {
+  font-size: 16px;
+  margin-bottom: 0px;
+  color: #f8f3fb;
+}
+
+.sidebarChat_info > p {
+  font-size: 0.75em;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  color: #80779b;
+}
+
+.sidebarChat_info {
+  margin-left: 2vh;
+}
+
+.sidebarChat_container > hr {
+  color: #655889;
+  margin-left: 11vh;
+  margin-right: 2vh;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.sidebarChat_Btn{
+  margin-left: 2vh;
+  /* margin-right: 2vh; */
+}
+
+.sidebarChat_Btn:hover{
+  background-color: #efaa86;
+}
+

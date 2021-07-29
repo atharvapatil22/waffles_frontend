@@ -1,0 +1,118 @@
+.sidebar {
+  flex: 0.35;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  border-radius: 4vh;
+  margin: 2vh;
+  padding: 0 2vw 0 2vw;
+}
+
+.sidebar_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: 10%;
+}
+
+.sidebar_search {
+  display: flex;
+  align-items: center;
+  background-color: #4e426d;
+  /* height: 2vh; */
+  /* padding: 10px; */
+  /* margin: 1.7vh; */
+  min-height: 10%;
+}
+
+.sidebar_searchContainer {
+  display: flex;
+  align-items: center;
+  /* background-color: white; */
+  
+  background-color: #5c4f81;
+  width: 100%;
+  height: 6vh;
+  border-radius: 1.5vh;
+  padding-top: 2.4vh;
+  padding-bottom: 2.4vh;
+}
+
+.sidebar_searchContainer > .MuiSvgIcon-root {
+  color: white;
+  margin-left: 1.2vw;
+}
+
+.sidebar_searchContainer > input {
+  border: none;
+  outline: none;
+  background-color: #5c4f81;
+  margin-right: 1vw;
+  width: 100%;
+  margin-left: 0.6vw;
+}
+
+.sidebar_searchContainer > input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255, 255, 255, 0.6); /* Firefox */
+}
+
+.sidebar_searchContainer > input::-ms-input-placeholder {
+  /* Microsoft Edge */
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sidebar_chats {
+  flex: 1;
+  background-color: #5c4f81;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 2vh;
+  /* margin: 1.7vh; */
+  margin-top: 4vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-color: black white;
+  max-height: 66vh;
+}
+
+.sidebar_chats::-webkit-scrollbar {
+  width: 5px;
+  /* display: none; */
+}
+
+/* 
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent, #efaa86);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(transparent, #716F81);
+} */
+
+.sidebar_chats::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 1vh;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.sidebar_chats::-webkit-scrollbar {
+  width: 0.6vw;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 1vh;
+}
+
+.sidebar_chats::-webkit-scrollbar-thumb {
+  border-radius: 1vh;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background-color: white;
+}
+
+.sidebarChat_Btn{
+  border-radius: 1.3vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  /* border: 1px solid black; */
+  background-color: #5c4f81;
+  padding-top: 0.7vh;
+  padding-bottom: 0.7vh;
+}

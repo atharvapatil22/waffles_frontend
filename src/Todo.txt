@@ -1,0 +1,23 @@
+LONG TERM PLANS:
+
+2) Chat.js:
+   instead of user.displayName   //Change this to get individual id. (same names)
+
+4) Display roomNames sorted by latest messages/rooms created.
+
+5) Fetch only 50 messages at a time.
+
+
+IMMEDIATE CHANGES:
+
+*chat window: Window scroll on new message.
+*Avatar nect to sent message.
+*Fixed timestamp.
+*Nav bar: Routing. // set default url 
+
+
+
+
+
+
+
