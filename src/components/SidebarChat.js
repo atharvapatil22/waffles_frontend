@@ -38,10 +38,13 @@ function SidebarChat({addNewChat, id, name}) {
 
         <div className="sidebarChat_container">
         <div className="sidebarChat">
-          <Avatar
+          {/* <Avatar
             className="avatar"
             src={`https://avatars.dicebear.com/api/human/${seed}.svg`}
-          />
+          /> */}
+          <div className="room_avatar_sb">
+            <h2 className="logo_heading_sb">{name.slice(0,1)}</h2>
+          </div>
           <div className="sidebarChat_info">
             <h2>{name}</h2>
             <p>{

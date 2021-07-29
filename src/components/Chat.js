@@ -67,7 +67,11 @@ function Chat() {
 
       <div className="chat_window">
         <div className="chat_header">
-          <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} />
+          {/* <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} /> */}
+
+          <div className="room_avatar">
+            <h2 className="logo_heading">{roomName.slice(0,1)}</h2>
+          </div>
 
           <div className="chat_headerInfo">
             <h3 className="chat-room-name">{roomName}</h3>
@@ -104,9 +108,9 @@ function Chat() {
               <span className="chat_name">{message.name === user.displayName ? "You " :message.name}</span>
               {message.message}
               <br/>
-              <span className="chat_timestamp">
+              <p className="chat_timestamp">
                 {new Date(message.timestamp?.toDate()).toUTCString()}
-              </span>
+              </p>
             </p>                               
           ))}
 

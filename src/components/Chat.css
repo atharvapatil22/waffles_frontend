@@ -42,6 +42,19 @@
 
 /* CHAT HEADER */
 
+.logo_heading {
+  color: white;
+}
+
+.room_avatar {
+  background-color: #efaa86;
+  padding-left: 1.8vh;
+  padding-top: 1.2vh;
+  height: 6vh;
+  width: 6vh;
+  border-radius: 50%;
+}
+
 .chat-room-name {
   margin: 0px;
   color: white;
@@ -125,17 +138,23 @@
   position: absolute;
   top: -1.7vh;
   /* font-weight: 400; */
+  color: #ccc6dc;
   font-size: xx-small;
 }
 
 .chat_timestamp {
   margin-left: 10px;
   font-size: xx-small;
+  color: #ccc6dc;
 }
 
 .chat_receiver {
   margin-left: auto;
   background-color: #efaa86;
+}
+
+.chat_receiver .chat_timestamp {
+  color: rgb(255, 255, 255);
 }
 
 .chat_window {

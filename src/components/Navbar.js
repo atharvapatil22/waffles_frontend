@@ -24,17 +24,17 @@ function Navbar() {
 
         <div className="options_list">
             <div id="option1" className="list_item">
-                <a className="home" href="#">
+                <a className="a_tag" href="#">
                 HOME
                 </a>
             </div>
                 <div id="option2" className="list_item" >
-                <a className="home" href="#">
+                <a className="a_tag" href="#">
                 CONTACTS
                 </a>
             </div>
                 <div id="option3" className="list_item">
-                <a className="home" href="#">
+                <a className="a_tag" href="#">
                 ABOUT
                 </a>
             </div>
@@ -52,7 +52,7 @@ function Navbar() {
         </div>
 
         <div className="avatar_container">
-          <Avatar src={user?.photoURL} />
+          <Avatar className="nav_avatar" src={user?.photoURL} />
         </div>
       </div>
     );

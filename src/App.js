@@ -28,15 +28,15 @@ function App() {
             <div className="app_body">
         
               <Router>
-              <Sidebar/>
-                  <Switch>
-                    <Route path="/rooms/:roomId">
-                      <Chat/>
-                    </Route>
-                    <Route path="/">
-                      <Chat/>
-                    </Route>              
-              </Switch>            
+                <Sidebar/>
+                <Switch>
+                  <Route path="/rooms/:roomId">
+                    <Chat/>
+                  </Route>
+                  <Route path="/">
+                    <Chat/>
+                  </Route>              
+                </Switch>            
               </Router>
               
             </div> 
