@@ -1,0 +1,18 @@
+.room_icon {
+  border-radius: 50%;
+  width: 1.7em;
+  height: 1.7em;
+  padding: 0.25em;
+
+  background: #efaa86;
+  border: 1px solid #efaa86;
+  color: white;
+  text-align: center;
+
+  font: 2em Arial, sans-serif;
+}
+
+.in_sidebar {
+  color: #efaa86;
+  background: white;
+}

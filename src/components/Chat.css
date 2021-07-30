@@ -42,19 +42,6 @@
 
 /* CHAT HEADER */
 
-.logo_heading {
-  color: white;
-}
-
-.room_avatar {
-  background-color: #efaa86;
-  padding-left: 1.8vh;
-  padding-top: 1.2vh;
-  height: 6vh;
-  width: 6vh;
-  border-radius: 50%;
-}
-
 .chat-room-name {
   margin: 0px;
   color: white;
@@ -86,6 +73,10 @@
 
 .chat_headerInfo > p {
   color: #80779b;
+}
+
+.chat_header_right {
+  margin-right: 1vw;
 }
 
 /* CHAT BODY  */
@@ -137,15 +128,17 @@
 .chat_name {
   position: absolute;
   top: -1.7vh;
-  /* font-weight: 400; */
+  font-weight: 500;
   color: #ccc6dc;
-  font-size: xx-small;
+  font-size: x-small;
 }
 
 .chat_timestamp {
   margin-left: 10px;
   font-size: xx-small;
   color: #ccc6dc;
+  margin-top: 0.2vh;
+  margin-bottom: 0.5vh;
 }
 
 .chat_receiver {

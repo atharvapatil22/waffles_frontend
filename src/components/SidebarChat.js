@@ -4,6 +4,7 @@ import './SidebarChat.css';
 import db from '../firebase';
 import  { Link } from "react-router-dom";
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
+import RoomIcon from './RoomIcon';
 
 
 function SidebarChat({addNewChat, id, name}) {
@@ -42,9 +43,9 @@ function SidebarChat({addNewChat, id, name}) {
             className="avatar"
             src={`https://avatars.dicebear.com/api/human/${seed}.svg`}
           /> */}
-          <div className="room_avatar_sb">
-            <h2 className="logo_heading_sb">{name.slice(0,1)}</h2>
-          </div>
+
+          <RoomIcon inSidebar={true} letter={name.slice(0,1)}/>
+
           <div className="sidebarChat_info">
             <h2>{name}</h2>
             <p>{

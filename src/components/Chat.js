@@ -13,6 +13,7 @@ import { useParams } from 'react-router-dom';
 import db from '../firebase';
 import {useStateValue} from "../StateProvider";
 import firebase from 'firebase';
+import RoomIcon from './RoomIcon';
 
 
 function Chat() {
@@ -44,10 +45,6 @@ function Chat() {
 
   const sendMessage = (e) => {
     e.preventDefault();
-    
-    console.log(" You typed >>>", input);
-
-    
 
     if (input != "") {
       db.collection('Rooms').doc(roomId).collection('messages').add({
@@ -69,9 +66,9 @@ function Chat() {
         <div className="chat_header">
           {/* <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} /> */}
 
-          <div className="room_avatar">
-            <h2 className="logo_heading">{roomName.slice(0,1)}</h2>
-          </div>
+          
+
+          <RoomIcon letter={roomName.slice(0,1)}/>
 
           <div className="chat_headerInfo">
             <h3 className="chat-room-name">{roomName}</h3>
@@ -88,13 +85,15 @@ function Chat() {
             </p>
           </div>
 
-          <div className="chat_headerRight">
-            <IconButton>
+          
+
+          <div className="chat_header_right">
+            {/* <IconButton>
               <SearchOutlined />
             </IconButton>
             <IconButton>
               <AttachFile />
-            </IconButton>
+            </IconButton> */}
             <IconButton>
               <MoreVert />
             </IconButton>
