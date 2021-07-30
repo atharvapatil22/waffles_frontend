@@ -4,6 +4,9 @@ import './Login.css';
 import {auth,provider} from '../firebase';
 import { actionTypes } from '../reducer';
 import { useStateValue } from '../StateProvider';
+import image from '../images/waffle-icon.png';
+
+<img src={image} height={100} width={100} />
 
 function Login() {
     const [{}, dispatch] = useStateValue();
@@ -20,12 +23,14 @@ function Login() {
             // console.log(result))
             .catch((error) => alert(error.message));
     };
+
+    
     
     return (
       <div className="login">
         <div className="login_container">
           <img
-            src="http://getdrawings.com/free-icon/waffle-icon-73.png"
+            src={image}
             alt="img0"
           />
           <div className="login_text">
