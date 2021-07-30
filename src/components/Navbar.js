@@ -44,7 +44,7 @@ function Navbar() {
                     <Dropdown.Toggle variant="success">MORE</Dropdown.Toggle>
                     <Dropdown.Menu>
                     <Dropdown.Item href="#">Settings</Dropdown.Item>
-                  <Dropdown.Item href="http://localhost:3000/">Logout</Dropdown.Item>
+                  <Dropdown.Item href="https://waffles-chat.netlify.app/">Logout</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
                 </div>
