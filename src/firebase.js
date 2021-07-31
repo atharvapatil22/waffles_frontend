@@ -11,14 +11,15 @@ import firebase from "firebase";
 //     measurementId: "G-2YFY3LH00C"
 //   };
 
+// NEW DB
 const firebaseConfig = {
-  apiKey: "AIzaSyAimlr8hRA32Lj5FdVUb3U_dBdZgOUBykA",
-  authDomain: "whats-app-clone-bb47a.firebaseapp.com",
-  projectId: "whats-app-clone-bb47a",
-  storageBucket: "whats-app-clone-bb47a.appspot.com",
-  messagingSenderId: "619436150134",
-  appId: "1:619436150134:web:17ced0f9b3d0c24da93e57",
-  measurementId: "G-9GR28F4NRE"
+  apiKey: "AIzaSyDm4sltYmNUF-JXxC0OpBXVbSbdY-GHIAg",
+  authDomain: "react-chatapp-8e8cf.firebaseapp.com",
+  projectId: "react-chatapp-8e8cf",
+  storageBucket: "react-chatapp-8e8cf.appspot.com",
+  messagingSenderId: "130131394363",
+  appId: "1:130131394363:web:e38598f65cd67bdd99411e",
+  measurementId: "G-SG3S5PYLNZ"
 };
 
   const firebaseApp = firebase.initializeApp(firebaseConfig);
