@@ -14,6 +14,8 @@ import db from '../firebase';
 import {useStateValue} from "../StateProvider";
 import firebase from 'firebase';
 import RoomIcon from './RoomIcon';
+import 'emoji-mart/css/emoji-mart.css'
+import { Picker } from 'emoji-mart'
 
 
 function Chat() {
@@ -58,6 +60,28 @@ function Chat() {
     setInput("");
   }
 
+  const getDate = (dateString , msg) => {
+
+    let arr = dateString.split(" ")
+
+    if(msg){
+    arr = [ arr[0] , arr[4]]
+    }
+    let finalDate = "";
+
+    const temp = arr.map((element) => {
+      if (element != "GMT")
+        if (element.length == 8) {
+          finalDate += element.slice(0, 5);
+        } else {
+          finalDate += element + " ";
+        }
+    });
+
+    return finalDate
+
+  } 
+
 
   return (
     <div className="chat">
@@ -73,15 +97,13 @@ function Chat() {
           <div className="chat_headerInfo">
             <h3 className="chat-room-name">{roomName}</h3>
             <p className="chat-room-last-seen"> 
-                {
-                 messages.length > 0 ?  
-                 "Last seen: " + 
-                new Date(
-                    messages[messages.length - 1]?.
-                    timestamp?.toDate()
-                ).toUTCString()
-                 : " No messages available yet"
-                }
+                {messages.length > 0
+                ? "Last seen: " +            
+                  getDate(new Date(
+                    messages[messages.length - 1]?.timestamp?.toDate()
+                  ).toUTCString() , false)
+
+                : " No messages available yet" }
             </p>
           </div>
 
@@ -108,7 +130,7 @@ function Chat() {
               {message.message}
               <br/>
               <p className="chat_timestamp">
-                {new Date(message.timestamp?.toDate()).toUTCString()}
+                {  getDate( new Date(message.timestamp?.toDate()).toUTCString() ,true )}
               </p>
             </p>                               
           ))}
@@ -117,6 +139,7 @@ function Chat() {
         </div>
 
         <div className="chat_footer">
+          
           <form onSubmit={sendMessage} 
                className="message_form">
             <button className="emoji_button">
